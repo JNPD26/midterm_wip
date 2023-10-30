@@ -1,0 +1,137 @@
+.navbar {
+    background-color: rgb(42, 148, 75);
+}
+
+.input-group {
+    margin-left: 500px;
+}
+
+input {
+    border-radius: 20px;
+    margin-right: 10px;
+    border: none;
+}
+
+button {
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+    border: none;
+}
+
+button:hover {
+    transform: rotate(360deg);
+}
+
+.accountcart {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.liaccount {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.licart {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+img {
+    align-self: center;
+}
+
+.carousel {
+    margin-top: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.textpromotion {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    margin-bottom: 0;
+}
+
+.imgpromotion {
+    display: flex;
+    justify-content: center;
+}
+
+.text_turtle_for_you{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+.example_turtle{
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.card{
+    border-color: black;
+}
+
+.textseeallturtle{
+    display: table;
+    background-color: rgb(22, 104, 18);
+}
+
+:hover.textseeallturtle{
+    background-color: rgb(8, 240, 39);
+}
+
+.innerbox{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color:rgb(42, 148, 75);
+    color: #000;
+  }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-bottom: 30px;
+}
+
+.container-item{
+    flex-direction: column;
+    text-align: center;
+    border-color: black;
+    border-style:double;
+}
+
+.btn-detail{
+    transition: transform 0.75s width 2s;
+    margin-bottom: 20px;
+}
+
+.btn-detail:hover{
+    transform: rotate(45deg);
+    width: 50px;
+    background-color: rgb(25, 74, 50);
+    color: rgb(255, 255, 255);
+}
