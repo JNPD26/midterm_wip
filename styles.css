@@ -1,9 +1,36 @@
+/* body{
+    background-image: linear-gradient(to bottom, rgb(95, 242, 95), rgb(255, 255, 255));
+} */
+
 .navbar {
-    background-color: rgb(42, 148, 75);
+    background:linear-gradient(125deg,rgb(42, 148, 75),rgb(27, 94, 48));
+    max-height:fit-content;
 }
 
-.input-group {
-    margin-left: 500px;
+.search-box {
+    width: 600px;
+    background: #fff;
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-right: 50px;
+}
+
+/* .row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+} */
+
+.inputbox{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    margin-right: 200px;
+    padding-left: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
 }
 
 input {
@@ -12,15 +39,59 @@ input {
     border: none;
 }
 
-button {
+.magni-btn{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.magni-btn.fa solid{
+    width: 25px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: #555;
+}
+
+.result-box ul{
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+    position: absolute;
+    background: #fff;
+    max-height: 200px;
+    overflow-y: scroll;
+    width: 470px;
+    border-radius: 5px;
+}
+
+.result-box ul li{
+    list-style: none;
+    border-radius: 15px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.result-box ul li:hover{
+    background: #e9f3ff;
+}
+
+/* .result-box{
+    max-height: 200px;
+    overflow-y: scroll;
+} */
+
+/* .magni-btn{
     border-radius: 20px;
     transition: transform 0.5s ease-in-out;
     border: none;
 }
 
-button:hover {
+.magni-btn:hover {
     transform: rotate(360deg);
-}
+} */
 
 .accountcart {
     display: flex;
@@ -38,6 +109,20 @@ button:hover {
     display: flex;
     flex-direction: row;
     align-self: center;
+}
+
+.cartcount{
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(167, 55, 27);
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
@@ -75,10 +160,6 @@ img {
     padding-top: 5px;
 }
 
-.card{
-    border-color: black;
-}
-
 .textseeallturtle{
     display: table;
     background-color: rgb(22, 104, 18);
@@ -103,6 +184,18 @@ a:hover{
     cursor: pointer;
 }
 
+.button_see_more{
+    padding: 5px;
+    border-radius: 15%;
+    background-color: #5c8497;
+}
+
+.button_see_more:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
 footer {
     text-align: center;
     padding: 5px;
@@ -114,17 +207,53 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin-top: 30px;
 }
 
-.container-item{
+/* .container-item{
     flex-direction: column;
     text-align: center;
     border-color: black;
-    border-style:double;
+    border-style: ridge;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+} */
+
+/* .container-sale{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0;
 }
 
-.btn-detail{
+.container-sale-item{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.big-sale{
+    background-color: rgb(166, 172, 177);
+    padding: 10px;
+    border-color: black;
+    border-style: ridge;
+    border-top-left-radius: 25px;
+}
+
+.discount{
+    background-color: rgb(222, 246, 2);
+    padding: 10px;
+    border-color: black;
+    border-style: ridge;
+    border-top-right-radius: 25px ;
+} */
+
+h3{
+    background-color: aquamarine;     
+} 
+
+/* .btn-detail{
     transition: transform 0.75s width 2s;
     margin-bottom: 20px;
 }
@@ -133,5 +262,303 @@ footer {
     transform: rotate(45deg);
     width: 50px;
     background-color: rgb(25, 74, 50);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+} */
+
+body {
+    background-color: #eee;
+    font-family: "Kanit";
+}
+
+.container {
+    width: 900px
+}
+
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 190px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.thumbnail-image {
+    border-radius: 10px 
+}
+
+.discount {
+    background-color: red;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 10px;
+    border-radius: 6px;
+    color: #fff
+}
+
+.wishlist {
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+ion-icon {
+    color: rgb(255, 0, 0);
+  }
+
+.first {
+    position: absolute;
+    width: 100%;
+    padding: 9px
+}
+
+.dress-name {
+    font-size: 13px;
+    font-weight: bold;
+    width: 75%
+}
+
+.new-price {
+    font-size: 13px;
+    font-weight: bold;
+    color: red
+}
+
+.old-price {
+    font-size: 8px;
+    font-weight: bold;
+    color: grey
+}
+
+.btn {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    padding: 3px
+}
+
+.item-size {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.male_btn:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.male_btn:focus{
+    background-color: #000;
+}
+
+.female_btn{
+    margin-right: 5px;
+}
+
+.female_btn:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.female_btn:focus{
+    background-color: #000;
+}
+
+.btn_detail{
+    color: #095a98;
+    border:none;
+    background-color: #ffffff;
+}
+
+.btn_detail:hover{
+    cursor: pointer;
+}
+
+.creme {
+    background-color: #fff;
+    border: 2px solid grey
+}
+
+.creme:hover {
+    border: 3px solid grey
+}
+
+.creme:focus {
+    background-color: grey
+}
+
+.red {
+    background-color: #fff;
+    border: 2px solid red
+}
+
+.red:hover {
+    border: 3px solid red
+}
+
+.red:focus {
+    background-color: red
+}
+
+.blue {
+    background-color: #fff;
+    border: 2px solid #40C4FF
+}
+
+.blue:hover {
+    border: 3px solid #40C4FF
+}
+
+.blue:focus {
+    background-color: #40C4FF
+}
+
+.darkblue {
+    background-color: #fff;
+    border: 2px solid #01579B
+}
+
+.darkblue:hover {
+    border: 3px solid #01579B
+}
+
+.darkblue:focus {
+    background-color: #01579B
+}
+
+.yellow {
+    background-color: #fff;
+    border: 2px solid #FFCA28
+}
+
+.yellow:hover {
+    border-radius: 3px solid #FFCA28
+}
+
+.yellow:focus {
+    background-color: #FFCA28
+}
+
+.rating-star {
+    font-size: 10px !important
+}
+
+.rating-number {
+    font-size: 10px;
+    color: grey
+}
+
+.buy {
+    font-size: 12px;
+    color: purple;
+    font-weight: 500
+}
+
+.voutchers {
+    background-color: rgb(212, 200, 26);
+    border: none;
+    border-radius: 10px;
+    width: 190px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden
+}
+
+.voutcher-divider {
+    display: flex
+}
+
+.voutcher-left {
+    width: 60%
+}
+
+.voutcher-name {
+    color: grey;
+    font-size: 9px;
+    font-weight: 500
+}
+
+.voutcher-code {
+    color: red;
+    font-size: 11px;
+    font-weight: bold
+}
+
+.voutcher-right {
+    width: 40%;
+    background-color: rgb(0, 128, 68);
+    color: #fff
+}
+
+.discount-percent {
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    top: 5px
+}
+
+.off {
+    font-size: 14px;
+    position: relative;
+    bottom: 5px
+}
+
+.container_cartpage{
+    display: flex;
+    flex-direction: row;
+    background-color: #5c8497;
+    margin-bottom: 20px;
+}
+
+.Bill{
+    width: 50%;
+    padding-left: 15px;
+    margin-right: 10px;
+    padding-bottom: 15px ;
+    background-color: rgb(231, 165, 121);
+}
+
+.Billing_Address{
+    text-align: center;
+}
+
+.Cart{
+    width: 50%;
+    background-color: #FFCA28;
+}
+
+.Your_Cart{
+    text-align: center;
+}
+
+.bg-homepage{
+    background-image: linear-gradient(to bottom, rgb(95, 242, 95), rgb(255, 255, 255));
+}
+
+.bg-allproduct{
+    background-image: linear-gradient(to bottom, rgb(95, 242, 95), rgb(255, 255, 255));  
+}
+
+.bg-cartpage{
+    background-image: linear-gradient(to bottom, rgb(95, 242, 95), rgb(255, 255, 255));
 }

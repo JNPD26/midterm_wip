@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/90c07b6efb.js" crossorigin="anonymous"></script>
+    <title>TurtleMania</title>
+</head>
+
+<body class="bg-cartpage">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/img/logo turtle.png" alt="Logo" width="45" height="45">
+                TurtleMania |
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="allproduct.html">AllTurtles</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">🐢Tortoise</a></li>
+                            <li><a class="dropdown-item" href="#">🐢Terrapin</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-box">
+
+                <input class="inputbox" type="text" id="input-box" placeholder=" You can search now!!!"
+                    autocomplete="off">
+                <button class="magni-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <div class="result-box">
+                </div>
+            </div>
+            <script src="autocomplete.js"></script>
+            <div class="collapse navbar-collapse accountcart" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 accountcartitem">
+                    <li class="nav-item liaccount">
+                        <img src="/img/User icon.png" alt="icon" width="30" height="30">
+                        <a class="nav-link" href="#">Account</a>
+                    </li>
+                    <li class="nav-item licart">
+                        <img src="/img/Cart icon.png" alt="icon" width="30" height="30">
+                        <div class="cartcount">
+                            3
+                        </div>
+                        <a class="nav-link active" href="cartpage.html"><b>Cart</b></a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class="container_cartpage">
+        <div class="Bill">
+            <h1 class="Billing_Address">Billing Address</h1>
+            <div>
+                <h4><b>Contact Information</b></h4>
+                <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">✉️Email</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                </div>
+            </div>
+            <div class="form-check ">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Email me with news and offers
+                </label>
+            </div>
+            <br>
+            <h4><b>Shipping Address</b></h4>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">🧑🏾‍🦱First name</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">🧑🏾‍🦱Last name</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                </div>
+                <div class="col-md-5">
+                    <label for="validationCustom04" class="form-label">📌Address</label>
+                    <input type="text" class="form-control" id="validationCustom04" required>
+                </div>
+                <div class="col-md-2">
+                    <label for="validationCustom05" class="form-label">🏛️City</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                </div>
+                <div class="col-md-2">
+                    <label for="validationCustom06" class="form-label">State</label>
+                    <input type="text" class="form-control" id="validationCustom06" required>
+                </div>
+                <div class="col-md-2">
+                    <label for="validationCustom07" class="form-label">📮Zip code</label>
+                    <input type="text" class="form-control" id="validationCustom07" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom08" class="form-label">🌎Country</label>
+                    <input type="text" class="form-control" id="validationCustom08" required>
+                </div>
+            </form>
+            <br>
+            <h4><b>Payment Optional</b></h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Visacard
+                </label>
+                <img src="/img/Visa_Brandmark_Blue_RGB_2021.png" width="5%" height="5%">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Mastercard
+                </label>
+                <img src="/img/ma_symbol_opt_73_3x.png" width="5%" height="5%">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Unionpaycard
+                </label>
+                <img src="/img/UnionPay_logo.svg.png" width="5%" height="5%">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    JCBcard
+                </label>
+                <img src="/img/JCB_logo.svg.png" width="5%" height="5%">
+            </div>
+            <br>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                    <label for="validationCustom09" class="form-label">🪪Name on card</label>
+                    <input type="text" class="form-control" id="validationCustom09" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom10" class="form-label">Card number</label>
+                    <input type="text" class="form-control" id="validationCustom10" required>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputState" class="form-label">Exp month</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputState" class="form-label">Exp year</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                        <option>2031</option>
+                        <option>2032</option>
+                        <option>2033</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="validationCustom11" class="form-label">💳CVV code</label>
+                    <input type="password" class="form-control" id="validationCustom1" required>
+                </div>
+                
+            </form>
+        </div>
+        <div class="Cart">
+            <h1 class="Your_Cart">Your Cart</h1>
+        </div>
+    </div>
+    <div>
+        <button>Submit form</button>
+    </div>
+</body>

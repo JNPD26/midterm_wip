@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/90c07b6efb.js" crossorigin="anonymous"></script>
+  <title>TurtleMania</title>
+</head>
+
+<body class="bg-allproduct">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/img/logo turtle.png" alt="Logo" width="45" height="45">
+        TurtleMania |
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><b>AllTurtles</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">🐢Tortoise</a></li>
+              <li><a class="dropdown-item" href="#">🐢Terrapin</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="search-box">
+
+        <input class="inputbox" type="text" id="input-box" placeholder=" You can search now!!!"
+            autocomplete="off">
+        <button class="magni-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <div class="result-box">
+        </div>
+    </div>
+    <script src="autocomplete.js"></script>
+      <div class="collapse navbar-collapse accountcart" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 accountcartitem">
+          <li class="nav-item liaccount">
+            <img src="/img/User icon.png" alt="icon" width="30" height="30">
+            <a class="nav-link" href="#">Account</a>
+          </li>
+          <li class="nav-item licart">
+            <img src="/img/Cart icon.png" alt="icon" width="30" height="30">
+            <div class="cartcount">
+              3
+          </div>
+            <a class="nav-link" href="cartpage.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-10%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon></span>
+              </div>
+            </div> <img src="/img/Black knob.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="dress-name">Black-knobbed map turtle</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿3,150</span> <small
+                  class="old-price text-right">฿3,500</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Black-knobbed map turtle</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>Black-knobbed map turtle</strong> หรือ เต่าแผนที่ปุ่มสีดำ หรือ
+                              เต่าใบเลื่อยปุ่มสีดำ มีถิ่นกำเนิดทางตะวันออกเฉียงใต้ของสหรัฐอเมริกา โดยในรัฐอลาบามา
+                              พวกมันถูกพบในบริเวณระบายน้ำของอ่าวโมบาย(Mobile Bay) ในรัฐมิสซิสซิปปี้ พบได้ในแม่น้ำ
+                              Tombigbee และในแม่น้ำ Black Warrior
+                              ที่ถูกพบได้ตามแม่น้ำเพราะพวกมันสามารถอยู่รอดได้ในน้ำจืดเท่านั้น
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              เป็นเต่าน้ำขนาดเล็กถึงขนาดกลาง มีผิวสีเทาอ่อน กระดองจะมีลักษณะเป็นโดม
+                              มีสันกระดองสี่ชิ้นยื่นออกมา ปลายสันทั้งสี่จะมีสำดำ
+                              เกล็ดบนกระดองจะมีลวดลายวงกลมสีเขียวและเหลืองอยู่ภายใน เส้นของนอกของเกล็ดจะเป็นสีดำ
+                              บริเวณหัวจะเป็นสีน้ำตาลเข้ม และมีลายสีเหลือง ไปจนถึงบริเวณขา เมื่อโตเต็มวัย
+                              ตัวเมียจะมีขนาดใหญ่กว่าตัวผู้สองเท่าแต่สันสีดำทั้งสี่ชิ้นของตัวผู้จะยื่นออกมามากกว่า
+                              หางและเล็บของตัวผู้จะมีขนาดยาวกว่าตัวเมีย ความยาวกระดองเมื่อโตเต็มวัยของตัวผู้ ประมาณ 3-4
+                              นิ้ว ของตัวเมีย ประมาณ 4-7.5 นิ้ว
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              ตามธรรมชาติ Black-knobbed map turtle
+                              จะออกหากินตามฤดูกาลตั้งแต่เดือนเมษายนถึงปลายเดือนพฤศจิกายน
+                              ในทุกๆวันเต่าจะมีการขึ้นมาพักอาบแดด ในช่วงเช้าตรู่หรือช่วงบ่าย
+                              เพื่อควบคุมอุณหภูมิในร่างกาย รวมไปถึงช่วยในการดูดซึมและย่อยอาหาร
+                              ทำให้เต่าที่อาบแดดเป็นประจำจะตัวโตกว่า ตัวผู้มีอายุประมาณ 3-4 ปี ตัวเมียมีอายุประมาณ
+                              7-8 ปี ตัวเมียวางไข่ได้มากสุด 5 ฟองและสามารถวางไข่ได้ 3-4 ฟองในหนึ่งปี
+                              การทำรังเกิดขึ้นตั้งแต่เดือนพฤษภาคมถึงเดือนสิงหาคม และเกิดขึ้นในเวลากลางคืนบนสันทราย <br>
+                              <strong>ข้อแนะนำในการเลี้ยง</strong> <br>
+                              - พื้นที่เลี้ยงควรมีบริเวณที่เป็นบก เอาไว้ให้เต่าขึ้นมาพักและอาบแดดด้วย <br>
+                              - คุณลูกค้าที่จะนำไปเลี้ยงในคอนโดจึงควรนำเต่าออกมาอาบแดดในทุกๆวันด้วยนะครับ
+                              แต่ถ้าไม่สะดวกควรมีโคมไฟUVAและUVBเปิดให้เต่าแทน <br>
+                              - ถ้าในห้องเปิดแอร์แนะนำว่าเปิดโคมไฟให้เต่าด้วยนะครับ <br>
+                              - พื้นที่เลี้ยงควรมีใบไม้แห้งใบใหญ่ๆ ขอนไม้ หรือที่หลบเอาไว้ให้เต่าด้วย
+                              เพื่อให้เต่าไม่เครียดและรู้สึกปลอดภัย เพราะเมื่อถูกเข้าใกล้เต่าจะรีบลงน้ำไปหาที่กำบัง <br>
+                              - อาหารแนะนำเป็นอาหารเม็ดสำหรับเต่า เพราะมีความสะอาดมากกว่าอาหารสด มีสารอาหารครบถ้วน
+                              หาซื้อและเก็บรักษาง่ายกว่า
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                          height="5%"></button>
+                                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.8</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">Monday Happy</span>
+                <h5 class="voutcher-code">#MONHPY</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">5%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-5%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon>
+                </span> </div>
+            </div> <img src="img/Diamond-black.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="dress-name">Diamondback terrapins</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿7,200</span> <small
+                  class="old-price text-right">฿8,000</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Diamondback terrapins</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                          height="5%"></button>
+                                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.8</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">Tuesday Surprise</span>
+                <h5 class="voutcher-code">#TUEDYSRPSPY</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">10%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-10%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon>
+                </span> </div>
+            </div> <img src="/img/Hamilton.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between ">
+              <h5 class="dress-name">Black pond turtle</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿1,080</span> <small
+                  class="old-price text-right">฿1,200</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Black pond turtle</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                          height="5%"></button>
+                                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.2</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">First Order</span>
+                <h5 class="voutcher-code">#HPYFRST</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">5%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-15%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon>
+                </span> </div>
+            </div> <img src="/img/Missisippi.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between ">
+              <h5 class="dress-name">Mississippi map turtle</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿1,275</span> <small
+                  class="old-price text-right">฿1,500</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Mississippi map turtle</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                          height="5%"></button>
+                                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">3.8</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">Hot Wednesday</span>
+                <h5 class="voutcher-code">#HTWEDDY</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">10%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-5%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon></span>
+              </div>
+            </div> <img src="/img/Peacock.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="dress-name">Nicaraguan slider</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿855</span> <small
+                  class="old-price text-right">฿900</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Nicaraguan slider</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                        height="5%"></button>
+                                  </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.8</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">Thursday Goodday</span>
+                <h5 class="voutcher-code">#THUDYGDDY</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">20%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-5%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon>
+                </span> </div>
+            </div> <img src="img/Pig-nose.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="dress-name">Pig-nosed turtle</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿2,500</span> <small
+                  class="old-price text-right">฿2,375</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Pig-nosed turtle</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                        height="5%"></button>
+                                  </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.8</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">Friday Crazy</span>
+                <h5 class="voutcher-code">#FRIDYCZY</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">15%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-10%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon>
+                </span> </div>
+            </div> <img src="/img/Red-Bellied Side-Necked.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between ">
+              <h5 class="dress-name">Northern red-bellied cooter</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿950</span> <small
+                  class="old-price text-right">฿855</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Northern red-bellied cooter</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                        height="5%"></button>
+                                  </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.2</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">Welcome Comback</span>
+                <h5 class="voutcher-code">#WLCMCMBK</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">10%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-10%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon>
+                </span> </div>
+            </div> <img src="/img/Riogrand.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between ">
+              <h5 class="dress-name">Rio Grande cooter</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿1,200</span> <small
+                  class="old-price text-right">฿1,080</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Rio Grande cooter</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                        height="5%"></button>
+                                  </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">3.8</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">Bright Saturday</span>
+                <h5 class="voutcher-code">#BRGTSATDY</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">5%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-5%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon></span>
+              </div>
+            </div> <img src="/img/Reeves.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="dress-name">Chinese pond turtle</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿500</span> <small
+                  class="old-price text-right">฿475</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Chinese pond turtle</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                      height="5%"></button>
+                                </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.8</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">Sunday Funday</span>
+                <h5 class="voutcher-code">#SUNDYFUNDY</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">5%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-10%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon>
+                </span> </div>
+            </div> <img src="img/Yellow-spot.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="dress-name">Yellow-spotted <br>Amazon river turtle</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿1,800</span> <small
+                  class="old-price text-right">฿1,620</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Yellow-spotted Amazon river turtle</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                      height="5%"></button>
+                                </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.8</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">End of month</span>
+                <h5 class="voutcher-code">#ENOFFMNT</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">10%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-15%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon>
+                </span> </div>
+            </div> <img src="/img/Sulcata.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between ">
+              <h5 class="dress-name">Sulcata tortoise</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿1,500</span> <small
+                  class="old-price text-right">฿1,275</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Sulcata tortoise</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                      height="5%"></button>
+                                </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">4.2</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">Beginning of the month</span>
+                <h5 class="voutcher-code">#BEGOFFTMNT</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">10%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="image-container">
+            <div class="first">
+              <div class="d-flex justify-content-between align-items-center"> <span class="discount">-10%</span> <span
+                  class="wishlist"><ion-icon name="heart"></ion-icon>
+                </span> </div>
+            </div> <img src="/img/Leopard.jpg" class="img-fluid rounded thumbnail-image">
+          </div>
+          <div class="product-detail-container p-2">
+            <div class="d-flex justify-content-between ">
+              <h5 class="dress-name">Leopard tortoise</h5>
+              <div class="d-flex flex-column mb-2"> <span class="new-price">฿4,500</span> <small
+                  class="old-price text-right">฿4,050</small> </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div class="d-flex"> <span class="item-size btn female_btn" type="button"><ion-icon
+                    name="female-outline"></ion-icon></span>
+                <span class="item-size btn male_btn" type="button"><ion-icon name="male-outline"></ion-icon></span>
+              </div>
+              <button class="btn_detail" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+                Detail
+              </button>
+              <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Leopard tortoise</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                              aria-controls="panelsStayOpen-collapseOne">
+                              ถิ่นกำเนิด
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseTwo">
+                              ลักษณะภายนอก
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseThree">
+                              ที่อยู่อาศัยและพฤติกรรม
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                              the
+                              collapse plugin adds the appropriate classes that we use to style each element. These
+                              classes
+                              control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                              can
+                              modify any of this with custom CSS or overriding our default variables. It's also worth
+                              noting
+                              that just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition
+                              does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary"><img src="/img/Cart icon.png" width="5%"
+                                      height="5%"></button>
+                                </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-1">
+              <div> <i class="fa fa-star-o rating-star"></i> <span class="rating-number">3.8</span> </div>
+              <span class="buy"><a src="" type="button">BUY +</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="card voutchers">
+            <div class="voutcher-divider">
+              <div class="voutcher-left text-center"> <span class="voutcher-name">Middle of the month</span>
+                <h5 class="voutcher-code">#MIDOFFTMNT</h5>
+              </div>
+              <div class="voutcher-right text-center border-left">
+                <h5 class="discount-percent">10%</h5> <span class="off">Off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

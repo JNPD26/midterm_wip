@@ -7,10 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/90c07b6efb.js" crossorigin="anonymous"></script>
     <title>TurtleMania</title>
 </head>
 
-<body>
+<body class="bg-homepage">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -32,7 +34,7 @@
                         <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="allturtles.html">AllTurtles</a>
+                        <a class="nav-link" href="allproduct.html">AllTurtles</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -49,12 +51,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="input-group">
-                <input type="text" placeholder=" You can search now!!!">
-                <button>
-                    <img src="/img/magnifying glass icon.png" alt="icon" width="15" height="15">
+            <div class="search-box">
+
+                <input class="inputbox" type="text" id="input-box" placeholder=" You can search now!!!"
+                    autocomplete="off">
+                <button class="magni-btn" id="inputBoxSearch">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+
+                <div class="result-box">
+                </div>
             </div>
+            <script src="autocomplete.js"></script>
             <div class="collapse navbar-collapse accountcart" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 accountcartitem">
                     <li class="nav-item liaccount">
@@ -63,7 +71,10 @@
                     </li>
                     <li class="nav-item licart">
                         <img src="/img/Cart icon.png" alt="icon" width="30" height="30">
-                        <a class="nav-link" href="#">Cart</a>
+                        <div class="cartcount">
+                            3
+                        </div>
+                        <a class="nav-link" href="cartpage.html">Cart</a>
                     </li>
                 </ul>
             </div>
@@ -120,28 +131,28 @@
             <img src="/img/Black knob.jpg" width="460px" height="260px" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">Black-knobbed map turtle</h5>
-                <a href="#" class="btn btn-secondary">See More</a>
+                <a href="#" class="button_see_more">See More</a>
             </div>
         </div>
         <div class="card" style="width: 20rem;">
             <img src="/img/Hamilton.jpg" width="460px" height="260px" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">Black pond turtle</h5>
-                <a href="#" class="btn btn-secondary">See More</a>
+                <a href="#" class="button_see_more">See More</a>
             </div>
         </div>
         <div class="card" style="width: 20rem;">
-            <img src="/img/Indian star.jpg" width="460px" height="260px" class="card-img-top">
+            <img src="/img/Leopard.jpg" width="460px" height="260px" class="card-img-top">
             <div class="card-body">
-                <h5 class="card-title">Indian Star Tortoise</h5>
-                <a href="#" class="btn btn-secondary">See More</a>
+                <h5 class="card-title">Leopard tortoise</h5>
+                <a href="#" class="button_see_more">See More</a>
             </div>
         </div>
 
         <div class="card textseeallturtle" style="width: 20rem;">
             <div class="innerbox">
                 <a href="allturtles.html">
-                    <h3 class="h3">See <br>All Turtle</h3>
+                    <h2>See <br>All Turtle</h2>
                 </a>
             </div>
         </div>
