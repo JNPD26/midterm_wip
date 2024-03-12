@@ -57,9 +57,9 @@
 
                 <input class="inputbox" type="text" id="input-box" placeholder=" You can search now!!!"
                     autocomplete="off">
-                <button class="magni-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+                    <button class="magni-btn" id="inputBoxSearch">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
 
                 <div class="result-box">
                 </div>
@@ -72,12 +72,9 @@
                         <a class="nav-link" href="#">Account</a>
                     </li>
                     <li class="nav-item licart">
-                        <img src="/img/Cart icon.png" alt="icon" width="30" height="30">
-                        <div class="cartcount">
-                            3
-                        </div>
-                        <a class="nav-link active" href="cartpage.html"><b>Cart</b></a>
-                    </li>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                        <p id="count">0</p>
+                      </li>
                 </ul>
             </div>
     </nav>
@@ -136,28 +133,28 @@
                 <label class="form-check-label" for="flexCheckDefault">
                     Visacard
                 </label>
-                <img src="/img/Visa_Brandmark_Blue_RGB_2021.png" width="5%" height="5%">
+                <img src="/img/Visa_Brandmark_Blue_RGB_2021.png" width="3%" height="3%">
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                 <label class="form-check-label" for="flexCheckChecked">
                     Mastercard
                 </label>
-                <img src="/img/ma_symbol_opt_73_3x.png" width="5%" height="5%">
+                <img src="/img/ma_symbol_opt_73_3x.png" width="3%" height="3%">
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     Unionpaycard
                 </label>
-                <img src="/img/UnionPay_logo.svg.png" width="5%" height="5%">
+                <img src="/img/UnionPay_logo.svg.png" width="3%" height="3%">
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                 <label class="form-check-label" for="flexCheckChecked">
                     JCBcard
                 </label>
-                <img src="/img/JCB_logo.svg.png" width="5%" height="5%">
+                <img src="/img/JCB_logo.svg.png" width="3%" height="3%">
             </div>
             <br>
             <form class="row g-3 needs-validation" novalidate>
@@ -202,7 +199,7 @@
                         <option>2033</option>
                     </select>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <label for="validationCustom11" class="form-label">💳CVV code</label>
                     <input type="password" class="form-control" id="validationCustom1" required>
                 </div>
@@ -210,8 +207,17 @@
             </form>
         </div>
         <div class="Cart">
-            <h1 class="Your_Cart">Your Cart</h1>
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">฿ 0.00</h2>
+                </div>
+            </div>
         </div>
+        <script src="listAllturtle.js"></script>
     </div>
     <div>
         <button>Submit form</button>
