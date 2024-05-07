@@ -57,9 +57,9 @@
 
                 <input class="inputbox" type="text" id="input-box" placeholder=" You can search now!!!"
                     autocomplete="off">
-                    <button class="magni-btn" id="inputBoxSearch">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                <button class="magni-btn" id="inputBoxSearch">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
 
                 <div class="result-box">
                 </div>
@@ -73,8 +73,8 @@
                     </li>
                     <li class="nav-item licart">
                         <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
-                        <p id="count">0</p>
-                      </li>
+                        <p id="count">1</p>
+                    </li>
                 </ul>
             </div>
     </nav>
@@ -203,23 +203,42 @@
                     <label for="validationCustom11" class="form-label">💳CVV code</label>
                     <input type="password" class="form-control" id="validationCustom1" required>
                 </div>
-                
+
             </form>
         </div>
-        <div class="Cart">
-            <div id="root"></div>
-            <div class="sidebar">
-                <div class="head"><p>My Cart</p></div>
-                <div id="cartItem">Your cart is empty</div>
+
+        <div class="Cartoncartpage-container">
+            <div class="Cartoncartpage">
+                <div class="head">
+                    <p style='font-size: 20px;'>My Cart</p>
+                </div>
+                <div class='cart-item'>
+                    <div class='row-img'>
+                        <div class='rowimg'>
+                            <img src="../img/Black knob.jpg" class="img-fluid rounded thumbnail-image">
+                        </div>
+                    </div>
+                    <p class='textincart' style='font-size:12px;'>
+                        Black-knobbed map turtle
+                    </p>
+                    <h2 class='priceincart' style='font-size: 16px;'>
+                        ฿ 3500 
+                    </h2>
+                    <i class='fa-solid fa-trash'></i>
+                </div>
                 <div class="foot">
                     <h3>Total</h3>
-                    <h2 id="total">฿ 0.00</h2>
-                </div>
+                    <h2 id="total">฿ 3500.00</h2>
+                  </div>
             </div>
         </div>
-        <script src="listAllturtle.js"></script>
     </div>
-    <div>
-        <button>Submit form</button>
+    <div class="submit-btn-area">
+        <button class="submit-btn" onclick="showalert()">Submit form</button>
     </div>
+    <script>
+        function showalert(){
+            alert("Payment completed!")
+        }
+    </script>
 </body>

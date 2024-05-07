@@ -194,10 +194,28 @@ img {
 }
 
 .example_turtle {
-    display: flex;
+    /* display: flex; */
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
     justify-content: space-around;
     padding-bottom: 10px;
     padding-top: 5px;
+}
+
+@media (max-width: 900px) {
+    .example_turtle {
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .example_turtle {
+        display:grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        row-gap: 2.5rem;
+    }
 }
 
 .textseeallturtle {
@@ -226,7 +244,7 @@ a:hover {
 
 .button_see_more {
     padding: 5px;
-    border-radius: 15%;
+    border-radius: 8px;
     background-color: #5c8497;
 }
 
@@ -310,12 +328,14 @@ body {
     font-family: "Kanit";
 }
 
-.container {
+/* .container {
     width: 900px
-}
+} */
 
 .card {
-    background-color: #fff;
+    /* display: grid;
+    grid-template-columns: auto auto auto auto; */
+    background-color: #ffffff;
     border: none;
     border-radius: 10px;
     width: 300px;
@@ -572,14 +592,80 @@ ion-icon {
 }
 
 .allproductpage {
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
+    display:grid;
+    grid-template-columns: auto auto;
+}
+
+.list_all_turtle {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    justify-content: space-around;
+    row-gap: 25px;
+    column-gap: 40px;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.Cart-container{
+    display: grid;
+    justify-content: center;
+}
+
+.Cart {
+    display: grid;
+    width: 400px;
+    height: max-content;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    background-image: linear-gradient(to top, rgb(185, 219, 33), rgb(255, 255, 255));
+    /* margin-left: 20px; */
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .allproductpage {
+        display:grid;
+        grid-template-columns: auto;
+    }
+    .list_all_turtle {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+    };
+}
+
+@media (max-width: 790px) {
+    .allproductpage {
+        display:grid;
+        grid-template-columns: auto;
+    }
+    .list_all_turtle {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .allproductpage {
+        display:grid;
+        grid-template-columns: auto;
+    }
+    .list_all_turtle {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto;
+    }
 }
 
 .container_cartpage {
     display: flex;
     flex-direction: row;
-    background-color: #5c8497;
+    /* background-color: #5c8497; */
     margin-bottom: 20px;
 }
 
@@ -588,21 +674,67 @@ ion-icon {
     padding-left: 15px;
     margin-right: 10px;
     padding-bottom: 15px;
-    background-color: rgb(231, 165, 121);
+    /* background-color: rgb(231, 165, 121); */
 }
 
 .Billing_Address {
     text-align: center;
 }
 
-.Cart {
-    display: flex;
+.Cartoncartpage-container{
+    display: grid;
+}
+
+.Cartoncartpage{
+    display: grid;
     width: 400px;
     height: max-content;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-right: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    background-image: linear-gradient(to top, rgb(185, 219, 33), rgb(255, 255, 255));
+    /* margin-left: 20px; */
+    padding: 15px;
+    text-align: center;
+}
+
+.submit-btn-area{
+    display: grid;
+    justify-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.submit-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: #0f550f;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.submit-btn:hover{
+    background-color:#000000;
+    color:#ffffff
+}
+
+@media (max-width: 992px) {
+    .container_cartpage {
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    .Bill {
+        width: 100%;
+        justify-content: center;
+    }
+    .Cartoncartpage-container{
+        justify-content: center;
+    }
+    .Cartoncartpage{
+        margin-top: 30px;
+    }
 }
 
 /* #root{
@@ -612,14 +744,6 @@ ion-icon {
     grid-gap: 20px;
     background-color: #000;
 } */
-.sidebar {
-    width: 100%;
-    border-radius: 5px;
-    background-image: linear-gradient(to top, rgb(185, 219, 33), rgb(255, 255, 255));
-    /* margin-left: 20px; */
-    padding: 15px;
-    text-align: center;
-}
 
 .head {
     background-color: rgb(0, 0, 0);
@@ -665,33 +789,11 @@ ion-icon {
     background-color: #555;
 }
 
-.list_all_turtle {
-    display: grid;
-    grid-template-columns: repeat(8, auto);
-    justify-content: space-around;
-    row-gap: 25px;
-    column-gap: 40px;
-    margin-top: 30px;
-    padding-left: 20px;
-}
-
-/* @media (max-width: 320px) {
-    .list_all_turtle {
-        grid-template-columns: repeat(1,auto);
+@media (max-width: 992px) {
+    .search-box {
+        display: none;
     }
 }
-
-@media (max-width: 480px) {
-    .list_all_turtle {
-        grid-template-columns: repeat(2,auto);
-    }
-}
-
-@media (max-width: 768px) {
-    .list_all_turtle {
-        grid-template-columns: repeat(3,auto);
-    }
-} */
 
 .cardallproduct {
     margin-bottom: 15px;
